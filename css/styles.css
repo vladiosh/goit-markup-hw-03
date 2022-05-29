@@ -66,16 +66,37 @@ body {
 
 /* ------------------header--------------- */
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  display: flex;
+}
+
 .header-logo {
   color: var(--accent-second-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .text {
   color: var(--accent-first-color);
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav .link {
@@ -85,6 +106,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -96,6 +121,15 @@ body {
   color: var(--accent-first-color);
 }
 
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+
 .contacts-nav .link {
   color: var(--primary-text-color);
 
@@ -103,6 +137,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts-nav .link:hover,
@@ -291,6 +329,7 @@ body {
 
   border-radius: 4px;
   padding: 6px 22px;
+  min-width: 73px;
 }
 
 .button:hover,
