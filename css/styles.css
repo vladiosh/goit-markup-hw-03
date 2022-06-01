@@ -164,8 +164,8 @@ body {
 .hero {
   background-color: var(--third-color);
   text-align: center;
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  /* height: 600px; */
   padding-top: 200px;
   padding-bottom: 200px;
   margin-right: auto;
@@ -225,7 +225,7 @@ body {
   margin-right: 30px;
 }
 .quality-item:last-child {
-  margin: right 0px;
+  margin-right: 0px;
 }
 
 .quality-list .title {
@@ -252,7 +252,7 @@ body {
 }
 
 .team {
-  padding-top: 186px;
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--second-color);
 }
@@ -381,6 +381,10 @@ body {
   min-width: 73px;
 }
 
+.portfolio-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button:hover,
 .button:focus {
   background-color: var(--accent-first-color);
@@ -440,6 +444,8 @@ body {
 .portfolio-cards {
   background-color: var(--primary-color);
   padding: 20px 24px;
-  width: 370px;
+  /* width: 370px; */
   border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
